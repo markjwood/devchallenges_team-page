@@ -1,0 +1,159 @@
+/* custom properties */
+:root {
+	--ff-footer: 'Montserrat', sans-serif;
+	--ff-sans: 'Poppins', sans-serif;
+	--ff-serif: 'PT Serif', serif;
+
+	--clr-white: #fafafa;
+
+	--small-screen-break: 730;
+}
+
+/* reset */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+	line-height: 1.2;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd,
+figure {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: var(--clr-white);
+}
+
+/* typography */
+body {
+	font-family: var(--ff-sans);
+	font-size: 0.875rem;
+}
+
+h1,
+.h1 {
+	font-family: var(--ff-serif);
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+h2,
+.h2,
+figcaption {
+	font-family: var(--ff-sans);
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+h3.job-title {
+	font-family: var(--ff-serif);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* layout */
+header {
+	margin: 1.5rem 0;
+}
+
+header h1 {
+	margin-bottom: 2.45rem;
+}
+
+h2 {
+	margin-bottom: 0.625rem;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 924px;
+	margin: 4.5rem auto 1.5rem auto;
+}
+
+.about {
+	max-width: 35ch;
+}
+
+/* gallery */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(var(--rows), 1fr);
+	column-gap: 1.25rem;
+
+	margin: 8rem 0;
+}
+
+.person {
+	display: flex;
+	column-gap: 0.25rem;
+	grid-row: span 4;
+	padding-bottom: 2rem;
+}
+
+.person img {
+	margin-bottom: 0.75em;
+}
+
+.job-title {
+	writing-mode: vertical-rl;
+}
+
+.spacer {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+/* footer */
+footer {
+	font-family: var(--ff-footer);
+	color: #a9a9a9;
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+footer a {
+	color: inherit;
+	font-weight: 700;
+}
+
+/* media queries */
+@media screen and (min-width: 730px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		font-size: 1rem;
+	}
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 4rem;
+	}
+}
