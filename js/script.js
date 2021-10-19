@@ -20,14 +20,14 @@ const people = [
 		photo: '/images/photo4.png',
 	},
 	{
+		name: 'Griff Richards',
+		title: 'Developer',
+		photo: '/images/photo5.png',
+	},
+	{
 		name: 'Stan John',
 		title: 'Developer',
 		photo: '/images/photo6.png',
-	},
-	{
-		name: 'Saba Cabrera',
-		title: 'Art Director',
-		photo: '/images/photo2.png',
 	},
 ];
 
