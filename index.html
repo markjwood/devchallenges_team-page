@@ -7,7 +7,7 @@
 			content="width=device-width, initial-scale=1,
   maximum-scale=5"
 		/>
-		<link rel="icon" href="devchallenges.png" />
+		<link rel="icon" href="images/devchallenges.png" />
 		<link
 			rel="shortcut icon"
 			type="image/x-icon"
@@ -36,6 +36,7 @@
 				</div>
 			</header>
 			<div class="gallery" id="gallery" style="--rows: 12">
+				<!-- person template --
 				<div class="person">
 					<figure>
 						<img src="photo1.png" alt="Bill Mahoney" />
@@ -43,48 +44,7 @@
 					</figure>
 					<h3 class="job-title">Product Owner</h3>
 				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
-				<div class="person">
-					<figure>
-						<img src="photo1.png" alt="Bill Mahoney" />
-						<figcaption>Bill Mahoney</figcaption>
-					</figure>
-					<h3 class="job-title">Product Owner</h3>
-				</div>
+				-->
 				<div class="spacer"></div>
 			</div>
 			<footer>
@@ -95,25 +55,6 @@
 			</footer>
 		</div>
 
-		<script>
-			const gallery = document.getElementById('gallery');
-			const personCount = document.querySelectorAll('.person').length;
-			const columnCount = () => {
-				// mobile breakpoint = 730px
-				return window.innerWidth < 730 ? 2 : 3;
-			};
-
-			function setRows(persons, columns) {
-				console.log(Math.ceil(persons / columns) * 4);
-				gallery.style = `--rows: ${Math.ceil(persons / columns) * 4}`;
-			}
-
-			window.onload = () => {
-				setRows(personCount, columnCount());
-			};
-			window.addEventListener('resize', () => {
-				setRows(personCount, columnCount());
-			});
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
