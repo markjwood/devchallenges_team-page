@@ -5,8 +5,6 @@
 	--ff-serif: 'PT Serif', serif;
 
 	--clr-white: #fafafa;
-
-	--small-screen-break: 730;
 }
 
 /* reset */
@@ -114,8 +112,7 @@ h2 {
 .person {
 	display: flex;
 	column-gap: 0.25rem;
-	grid-row: span 4;
-	padding-bottom: 2rem;
+	grid-row: span 6;
 }
 
 .person img {
@@ -124,6 +121,7 @@ h2 {
 
 .job-title {
 	writing-mode: vertical-rl;
+	font-size: 0.625rem;
 }
 
 .spacer {
@@ -155,5 +153,8 @@ footer a {
 	.gallery {
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 4rem;
+	}
+	.job-title {
+		font-size: 0.75rem;
 	}
 }
