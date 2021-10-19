@@ -91,7 +91,7 @@ h2 {
 
 .wrapper {
 	width: 90%;
-	max-width: 924px;
+	max-width: 116ch;
 	margin: 4.5rem auto 1.5rem auto;
 }
 
@@ -155,6 +155,6 @@ footer a {
 		column-gap: 4rem;
 	}
 	.job-title {
-		font-size: 0.75rem;
+		font-size: 0.825rem;
 	}
 }
